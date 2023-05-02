@@ -18,5 +18,23 @@ function getConcatenation($nums)
 }
 
 
-$nums = [1, 2, 1];
-getConcatenation($nums);
+function getConcatenation1($nums)
+{
+    arsort($nums);
+    print_r($nums);
+    return $nums;
+}
+
+
+function getConcatenation2($nums)
+{
+    $result = $nums;
+    array_push($result, 4);
+    array_merge_recursive($result, $nums);
+    /* array_merge_recursive() mescla os elementos de um ou mais arrays de forma que os elementos de um são colocados no final do array anterior. Retorna o array resultante da fusão.*/
+    echo json_encode($result);
+    return $nums;
+}
+
+$nums = [5 =>1, 2=> 2, "A"=> 1];
+getConcatenation1($nums);
