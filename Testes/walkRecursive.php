@@ -10,3 +10,5 @@ function test_print($item, $key)
 array_walk_recursive($fruits, 'test_print');
 ?>
 
+
+

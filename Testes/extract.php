@@ -1,4 +1,7 @@
+<!-- extract — Import variables into the current symbol table from an array -->
 <?php
+
+
 
 $size = "large";
 $var_array = array("color" => "blue",
@@ -9,3 +12,5 @@ extract($var_array, EXTR_PREFIX_SAME, "valor");
 echo "$color, $size, $shape, $valor_size\n";
 
 ?>
+
+
