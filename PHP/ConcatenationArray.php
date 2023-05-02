@@ -36,5 +36,7 @@ function getConcatenation2($nums)
     return $nums;
 }
 
+
+
 $nums = [5 =>1, 2=> 2, "A"=> 1];
 getConcatenation1($nums);
