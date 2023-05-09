@@ -23,4 +23,3 @@ function majorityElement($nums)
 $nums = [6, 5, 5, 8, 9, 9, 9, 9, 1, 1, 1, 1, 1, 1, 1];
 majorityElement($nums);
 
-
